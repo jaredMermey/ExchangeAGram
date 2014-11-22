@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		02691BF71A0E764600DCB5EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02691BF61A0E764600DCB5EE /* AppDelegate.swift */; };
 		02691BFA1A0E764600DCB5EE /* ExchangeAGram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02691BF81A0E764600DCB5EE /* ExchangeAGram.xcdatamodeld */; };
-		02691BFC1A0E764600DCB5EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02691BFB1A0E764600DCB5EE /* ViewController.swift */; };
 		02691BFF1A0E764600DCB5EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02691BFD1A0E764600DCB5EE /* Main.storyboard */; };
 		02691C011A0E764600DCB5EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02691C001A0E764600DCB5EE /* Images.xcassets */; };
 		02691C041A0E764600DCB5EE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02691C021A0E764600DCB5EE /* LaunchScreen.xib */; };
 		02691C101A0E764600DCB5EE /* ExchangeAGramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02691C0F1A0E764600DCB5EE /* ExchangeAGramTests.swift */; };
+		02691C1A1A0E782200DCB5EE /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02691C191A0E782200DCB5EE /* FeedViewController.swift */; };
+		02691C1C1A0E7B4B00DCB5EE /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02691C1B1A0E7B4B00DCB5EE /* FeedCell.swift */; };
+		02691C1E1A0E7E1A00DCB5EE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02691C1D1A0E7E1A00DCB5EE /* MobileCoreServices.framework */; };
+		0279A7AF1A1266920066B921 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0279A7AE1A1266920066B921 /* FilterViewController.swift */; };
+		0279A7B11A126DCF0066B921 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0279A7B01A126DCF0066B921 /* FilterCell.swift */; };
+		0279A7B61A1ADB9D0066B921 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0279A7B51A1ADB9D0066B921 /* ProfileViewController.swift */; };
+		0279A7B81A1ADF530066B921 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0279A7B71A1ADF530066B921 /* FacebookSDK.framework */; };
+		0279A7BD1A1ECF190066B921 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0279A7BC1A1ECF190066B921 /* MapViewController.swift */; };
+		0279A7BF1A2128DC0066B921 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0279A7BE1A2128DC0066B921 /* MapKit.framework */; };
+		0279A7C11A2130140066B921 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0279A7C01A2130140066B921 /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +40,23 @@
 		02691BF51A0E764600DCB5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02691BF61A0E764600DCB5EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02691BF91A0E764600DCB5EE /* ExchangeAGram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExchangeAGram.xcdatamodel; sourceTree = "<group>"; };
-		02691BFB1A0E764600DCB5EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		02691BFE1A0E764600DCB5EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02691C001A0E764600DCB5EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		02691C031A0E764600DCB5EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		02691C091A0E764600DCB5EE /* ExchangeAGramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeAGramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02691C0E1A0E764600DCB5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02691C0F1A0E764600DCB5EE /* ExchangeAGramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeAGramTests.swift; sourceTree = "<group>"; };
+		02691C191A0E782200DCB5EE /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		02691C1B1A0E7B4B00DCB5EE /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		02691C1D1A0E7E1A00DCB5EE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0279A7AE1A1266920066B921 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		0279A7B01A126DCF0066B921 /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		0279A7B51A1ADB9D0066B921 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0279A7B71A1ADF530066B921 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		0279A7B91A1AE08D0066B921 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		0279A7BC1A1ECF190066B921 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
+		0279A7BE1A2128DC0066B921 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0279A7C01A2130140066B921 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedItem.swift; path = ../FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0279A7BF1A2128DC0066B921 /* MapKit.framework in Frameworks */,
+				02691C1E1A0E7E1A00DCB5EE /* MobileCoreServices.framework in Frameworks */,
+				0279A7B81A1ADF530066B921 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,11 +102,17 @@
 			isa = PBXGroup;
 			children = (
 				02691BF61A0E764600DCB5EE /* AppDelegate.swift */,
-				02691BFB1A0E764600DCB5EE /* ViewController.swift */,
+				02691C191A0E782200DCB5EE /* FeedViewController.swift */,
+				0279A7AE1A1266920066B921 /* FilterViewController.swift */,
+				02691C1B1A0E7B4B00DCB5EE /* FeedCell.swift */,
+				0279A7B01A126DCF0066B921 /* FilterCell.swift */,
+				0279A7B51A1ADB9D0066B921 /* ProfileViewController.swift */,
+				0279A7BC1A1ECF190066B921 /* MapViewController.swift */,
+				0279A7B91A1AE08D0066B921 /* Bridging-Header.h */,
 				02691BFD1A0E764600DCB5EE /* Main.storyboard */,
+				0279A7B41A143F630066B921 /* Model */,
 				02691C001A0E764600DCB5EE /* Images.xcassets */,
 				02691C021A0E764600DCB5EE /* LaunchScreen.xib */,
-				02691BF81A0E764600DCB5EE /* ExchangeAGram.xcdatamodeld */,
 				02691BF41A0E764600DCB5EE /* Supporting Files */,
 			);
 			path = ExchangeAGram;
@@ -93,6 +121,9 @@
 		02691BF41A0E764600DCB5EE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0279A7BE1A2128DC0066B921 /* MapKit.framework */,
+				0279A7B71A1ADF530066B921 /* FacebookSDK.framework */,
+				02691C1D1A0E7E1A00DCB5EE /* MobileCoreServices.framework */,
 				02691BF51A0E764600DCB5EE /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -113,6 +144,15 @@
 				02691C0E1A0E764600DCB5EE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0279A7B41A143F630066B921 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0279A7C01A2130140066B921 /* FeedItem.swift */,
+				02691BF81A0E764600DCB5EE /* ExchangeAGram.xcdatamodeld */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,8 +255,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02691BFC1A0E764600DCB5EE /* ViewController.swift in Sources */,
+				0279A7B11A126DCF0066B921 /* FilterCell.swift in Sources */,
+				0279A7AF1A1266920066B921 /* FilterViewController.swift in Sources */,
 				02691BF71A0E764600DCB5EE /* AppDelegate.swift in Sources */,
+				02691C1C1A0E7B4B00DCB5EE /* FeedCell.swift in Sources */,
+				0279A7BD1A1ECF190066B921 /* MapViewController.swift in Sources */,
+				0279A7C11A2130140066B921 /* FeedItem.swift in Sources */,
+				02691C1A1A0E782200DCB5EE /* FeedViewController.swift in Sources */,
+				0279A7B61A1ADB9D0066B921 /* ProfileViewController.swift in Sources */,
 				02691BFA1A0E764600DCB5EE /* ExchangeAGram.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -330,7 +376,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,9 +388,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jaredmermey/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = ExchangeAGram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ExchangeAGram/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -352,9 +404,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jaredmermey/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = ExchangeAGram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ExchangeAGram/Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -411,6 +469,7 @@
 				02691C151A0E764600DCB5EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02691C161A0E764600DCB5EE /* Build configuration list for PBXNativeTarget "ExchangeAGramTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +478,7 @@
 				02691C181A0E764600DCB5EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
