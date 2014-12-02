@@ -10,7 +10,6 @@ import Foundation
 import CoreData
 
 @objc (FeedItem)
-
 class FeedItem: NSManagedObject {
 
     @NSManaged var caption: String
@@ -18,5 +17,7 @@ class FeedItem: NSManagedObject {
     @NSManaged var thumbnail: NSData
     @NSManaged var latitude: NSNumber
     @NSManaged var longitude: NSNumber
+    @NSManaged var uniqueID: String
+    @NSManaged var filtered: NSNumber
 
 }

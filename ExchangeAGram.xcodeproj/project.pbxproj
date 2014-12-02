@@ -22,7 +22,7 @@
 		0279A7B81A1ADF530066B921 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0279A7B71A1ADF530066B921 /* FacebookSDK.framework */; };
 		0279A7BD1A1ECF190066B921 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0279A7BC1A1ECF190066B921 /* MapViewController.swift */; };
 		0279A7BF1A2128DC0066B921 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0279A7BE1A2128DC0066B921 /* MapKit.framework */; };
-		0279A7C11A2130140066B921 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0279A7C01A2130140066B921 /* FeedItem.swift */; };
+		0279A7C31A2150850066B921 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0279A7C21A2150850066B921 /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		0279A7B91A1AE08D0066B921 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		0279A7BC1A1ECF190066B921 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
 		0279A7BE1A2128DC0066B921 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		0279A7C01A2130140066B921 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedItem.swift; path = ../FeedItem.swift; sourceTree = "<group>"; };
+		0279A7C21A2150850066B921 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedItem.swift; path = ../FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +149,7 @@
 		0279A7B41A143F630066B921 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0279A7C01A2130140066B921 /* FeedItem.swift */,
+				0279A7C21A2150850066B921 /* FeedItem.swift */,
 				02691BF81A0E764600DCB5EE /* ExchangeAGram.xcdatamodeld */,
 			);
 			name = Model;
@@ -260,7 +260,7 @@
 				02691BF71A0E764600DCB5EE /* AppDelegate.swift in Sources */,
 				02691C1C1A0E7B4B00DCB5EE /* FeedCell.swift in Sources */,
 				0279A7BD1A1ECF190066B921 /* MapViewController.swift in Sources */,
-				0279A7C11A2130140066B921 /* FeedItem.swift in Sources */,
+				0279A7C31A2150850066B921 /* FeedItem.swift in Sources */,
 				02691C1A1A0E782200DCB5EE /* FeedViewController.swift in Sources */,
 				0279A7B61A1ADB9D0066B921 /* ProfileViewController.swift in Sources */,
 				02691BFA1A0E764600DCB5EE /* ExchangeAGram.xcdatamodeld in Sources */,

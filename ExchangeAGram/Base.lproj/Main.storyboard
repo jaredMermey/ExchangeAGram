@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O2h-XL-dYp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Feed View Controller-->
@@ -16,8 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Lu9-dd-pz9">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Lu9-dd-pz9">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ym6-Eb-XuX">
                                     <size key="itemSize" width="150" height="150"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -57,6 +59,12 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lu9-dd-pz9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="Cnc-jE-k77"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lu9-dd-pz9" secondAttribute="trailing" constant="-16" id="Lh7-2j-bqy"/>
+                            <constraint firstItem="Lu9-dd-pz9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="SPT-vr-XSE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lu9-dd-pz9" secondAttribute="bottom" id="wF0-oD-9iJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gwK-YL-J8C">
                         <barButtonItem key="leftBarButtonItem" title="Profile" id="4G3-Ph-zuS">
@@ -91,23 +99,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iq5-Ma-UZI">
-                                <rect key="frame" x="10" y="70" width="100" height="100"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlaceHolderImage" translatesAutoresizingMaskIntoConstraints="NO" id="iq5-Ma-UZI">
+                                <rect key="frame" x="16" y="72" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ab9-jV-JPx"/>
+                                    <constraint firstAttribute="width" constant="100" id="tae-aw-97W"/>
+                                </constraints>
                             </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwn-1B-saH">
-                                <rect key="frame" x="157" y="114" width="427" height="21"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwn-1B-saH">
+                                <rect key="frame" x="16" y="180" width="185" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="8YH-0r-QRz"/>
+                                    <constraint firstAttribute="width" constant="185" id="wMZ-Xp-ZTw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="irY-hq-IWO" customClass="FBLoginView">
-                                <rect key="frame" x="50" y="400" width="200" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irY-hq-IWO" customClass="FBLoginView">
+                                <rect key="frame" x="176" y="273" width="248" height="54"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="2wD-Eb-AXC"/>
+                                    <constraint firstAttribute="height" constant="54" id="Dz0-dv-CEM"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4y-0r-iDA">
-                                <rect key="frame" x="10" y="220" width="140" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.94839126119999995" blue="0.18597799330000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Map View">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4y-0r-iDA">
+                                <rect key="frame" x="455" y="86" width="129" height="102"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="loH-9i-ZKT"/>
+                                    <constraint firstAttribute="height" constant="102" id="ndc-Zl-Cfh"/>
+                                </constraints>
+                                <state key="normal" image="MapIcon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -116,6 +140,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iq5-Ma-UZI" firstAttribute="top" secondItem="Jso-Qd-eah" secondAttribute="topMargin" constant="72" id="2XY-7B-d1h"/>
+                            <constraint firstItem="S4y-0r-iDA" firstAttribute="trailing" secondItem="Jso-Qd-eah" secondAttribute="trailingMargin" id="6DL-Rz-l2W"/>
+                            <constraint firstItem="Lwn-1B-saH" firstAttribute="leading" secondItem="Jso-Qd-eah" secondAttribute="leadingMargin" id="Hbf-co-8Z0"/>
+                            <constraint firstAttribute="centerX" secondItem="irY-hq-IWO" secondAttribute="centerX" id="N5N-nm-1n3"/>
+                            <constraint firstItem="Lwn-1B-saH" firstAttribute="top" secondItem="iq5-Ma-UZI" secondAttribute="bottom" constant="8" id="SfW-TC-UYl"/>
+                            <constraint firstItem="S4y-0r-iDA" firstAttribute="top" secondItem="Jso-Qd-eah" secondAttribute="topMargin" constant="86" id="YbQ-Zc-88p"/>
+                            <constraint firstAttribute="centerY" secondItem="irY-hq-IWO" secondAttribute="centerY" id="bdL-R4-BC7"/>
+                            <constraint firstItem="iq5-Ma-UZI" firstAttribute="leading" secondItem="Jso-Qd-eah" secondAttribute="leadingMargin" id="qEY-fv-iMR"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="fbLoginView" destination="irY-hq-IWO" id="hNG-cc-pFU"/>
@@ -140,11 +174,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="D6c-Ei-IYf">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="D6c-Ei-IYf">
                                 <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D6c-Ei-IYf" firstAttribute="leading" secondItem="aAf-Oc-rkv" secondAttribute="leadingMargin" constant="-16" id="0YW-6h-BbR"/>
+                            <constraint firstItem="D6c-Ei-IYf" firstAttribute="top" secondItem="Qs2-ty-JL8" secondAttribute="bottom" id="jCY-qS-V4J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D6c-Ei-IYf" secondAttribute="trailing" constant="-16" id="m4O-AG-fLf"/>
+                            <constraint firstItem="Yn5-vZ-3gi" firstAttribute="top" secondItem="D6c-Ei-IYf" secondAttribute="bottom" constant="-64" id="ubi-QN-ZDT"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="D6c-Ei-IYf" id="zJr-GU-s8U"/>
@@ -173,4 +213,8 @@
             <point key="canvasLocation" x="491" y="339"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MapIcon" width="102" height="102"/>
+        <image name="PlaceHolderImage" width="280" height="280"/>
+    </resources>
 </document>
